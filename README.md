@@ -35,4 +35,4 @@ Projeto de aulas em HTML com foco em **entrega final 100% offline**.
   - botões de teste para Gemini, Claude, Copilot e ChatGPT;
   - caixa de prompt com quebra de linha para não estourar o layout.
 - Tabelas de avaliação da prática foram convertidas para formulário interativo.
-- Regra operacional: novos HTMLs gerados devem ficar na pasta `html/`.
+- Regra operacional: novos HTMLs gerados devem ficar na pasta `html/`..
