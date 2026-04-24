@@ -69,6 +69,27 @@ Antes de gerar o HTML, confira:
 
 Não há script automatizado de conversão neste repositório. A conversão atual é manual: o conteúdo aprovado em Markdown deve ser aplicado em uma página HTML baseada no layout existente.
 
+## Como os HTMLs são gerados
+
+As páginas HTML não são geradas automaticamente por ferramenta, script ou pipeline de build.
+
+O processo atual é manual:
+
+1. A aula é escrita primeiro em Markdown, dentro de `aulas-md/`.
+2. O conteúdo do Markdown é revisado até ficar completo.
+3. Depois disso, uma página HTML já pronta é usada como modelo visual.
+4. O conteúdo aprovado no Markdown é transferido para o HTML.
+5. O HTML final fica em `html/` e deve abrir diretamente no navegador.
+
+Cada HTML é um arquivo completo e independente. Ele inclui o próprio CSS, o próprio JavaScript, a navegação lateral, o tema claro/escuro e os ajustes de responsividade. Isso permite que a aula funcione offline, sem depender de CDN, bibliotecas externas, fontes remotas ou servidor.
+
+Por isso, ao alterar uma aula, a ordem correta é sempre:
+
+1. alterar primeiro o arquivo `.md`;
+2. revisar o conteúdo no Markdown;
+3. atualizar o HTML correspondente;
+4. testar o HTML final localmente.
+
 Regras para a conversão:
 
 - salvar novos HTMLs sempre em `html/`;
