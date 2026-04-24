@@ -255,8 +255,11 @@
 
         /* Listas e Tabelas */
         ul { list-style: none; margin-bottom: 1rem; }
-        li { margin-bottom: 12px; line-height: 1.6; position: relative; padding-left: 25px; }
-        li::before { content: "✓"; font-family: inherit; font-weight: 900; position: absolute; left: 0; color: var(--accent); }
+        ol { margin: 0 0 1rem 1.25rem; padding-left: 1.25rem; }
+        li { margin-bottom: 12px; line-height: 1.6; }
+        ul li { position: relative; padding-left: 25px; }
+        ul li::before { content: "✓"; font-family: inherit; font-weight: 900; position: absolute; left: 0; color: var(--accent); }
+        ol li { padding-left: 0.25rem; }
         
         .table-wrapper { width: 100%; overflow-x: auto; margin: 1.5rem 0; border-radius: 8px; border: 1px solid var(--table-border); }
         table { width: 100%; border-collapse: collapse; background: rgba(201,168,76,0.03); }
