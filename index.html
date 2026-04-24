@@ -116,7 +116,7 @@
         }
 
         .nav-group-title {
-            font-size: 0.68rem;
+            font-size: 0.76rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--accent);
@@ -133,7 +133,8 @@
             text-decoration: none;
             border-radius: 8px;
             margin-bottom: 5px;
-            font-size: 0.78rem;
+            font-size: 0.92rem;
+            font-weight: 650;
             border-bottom: 1px solid var(--nav-divider);
         }
 
@@ -145,9 +146,18 @@
 
         .nav-icon {
             color: var(--accent);
-            width: 16px;
+            width: 22px;
             text-align: center;
             flex-shrink: 0;
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        .nav-child {
+            margin-left: 1.1rem;
+            padding-left: 14px;
+            font-size: 0.86rem;
+            border-left: 2px solid var(--nav-divider);
         }
 
         .nav-locked {
@@ -483,19 +493,19 @@
 
         <nav id="sidebar-nav">
             <div class="nav-group-title">Início</div>
-            <a href="#inicio" class="nav-l current"><span class="nav-icon">IN</span> Apresentação</a>
-            <a href="#aulas" class="nav-l"><span class="nav-icon">AU</span> Aulas disponíveis</a>
+            <a href="#inicio" class="nav-l current"><span class="nav-icon">⌂</span> Apresentação</a>
+            <a href="#aulas" class="nav-l"><span class="nav-icon">◉</span> Aulas disponíveis</a>
 
             <hr class="nav-divider-line">
             <div class="nav-group-title">Aulas</div>
-            <a href="html/aula1.html" class="nav-l"><span class="nav-icon">01</span> Aula 1</a>
-            <a href="html/aula1-pratica-html.html" class="nav-l"><span class="nav-icon">P1</span> Prática Aula 1</a>
+            <a href="html/aula1.html" class="nav-l"><span class="nav-icon">▸</span> Aula 1</a>
+            <a href="html/aula1-pratica-html.html" class="nav-l nav-child"><span class="nav-icon">↳</span> Prática Aula 1</a>
 
             <hr class="nav-divider-line">
             <div class="nav-group-title">Próximas Aulas</div>
-            <span class="nav-l nav-locked"><span class="nav-icon">02</span> Aula 2</span>
-            <span class="nav-l nav-locked"><span class="nav-icon">03</span> Aula 3</span>
-            <span class="nav-l nav-locked"><span class="nav-icon">04</span> Aula 4</span>
+            <span class="nav-l nav-locked"><span class="nav-icon">◇</span> Aula 2</span>
+            <span class="nav-l nav-locked"><span class="nav-icon">◇</span> Aula 3</span>
+            <span class="nav-l nav-locked"><span class="nav-icon">◇</span> Aula 4</span>
         </nav>
     </aside>
 
@@ -510,7 +520,6 @@
                     <p>Repositório público das aulas em HTML para acesso direto pelo GitHub Pages.</p>
                     <span class="badge">Publicação online</span>
                 </div>
-                <p class="muted">Cada página HTML é gerada depois que a aula correspondente está completa e revisada em Markdown.</p>
             </section>
 
             <section id="aulas" class="caor-card">
