@@ -1,6 +1,6 @@
-# Aulas para HTML (Offline)
+# Aulas Engenharia Prompt
 
-Projeto para produzir aulas completas em Markdown e convertê-las depois para páginas HTML finais, com entrega 100% offline.
+Projeto para produzir aulas completas em Markdown e convertê-las depois para páginas HTML finais, com entrega 100% offline e publicação pública via GitHub Pages.
 
 ## Regra principal
 
@@ -15,6 +15,7 @@ Projeto para produzir aulas completas em Markdown e convertê-las depois para p�
 - `aulas-md/`: textos-fonte das aulas em Markdown.
 - `aulas-md/GUIA-APOIO.md`: padrão editorial, regras técnicas e checklist.
 - `html/`: arquivos HTML finais, já diagramados e prontos para uso offline.
+- `index.html`: página pública de entrada para acesso às aulas pelo GitHub Pages.
 
 Arquivos atuais:
 
@@ -25,6 +26,16 @@ Arquivos atuais:
 - `aulas-md/aula4.md`: rascunho da Aula 4.
 - `html/aula1.html`: versão HTML da Aula 1.
 - `html/aula1-pratica-html.html`: versão HTML da prática da Aula 1.
+
+## Acesso público
+
+O repositório deve ficar publicado no GitHub com o nome `aulas-engenharia-prompt`.
+
+Com o GitHub Pages ativo a partir da branch `main`, os HTMLs poderão ser acessados por qualquer pessoa nestes endereços:
+
+- Página inicial: `https://paulosrl.github.io/aulas-engenharia-prompt/`
+- Aula 1: `https://paulosrl.github.io/aulas-engenharia-prompt/html/aula1.html`
+- Prática da Aula 1: `https://paulosrl.github.io/aulas-engenharia-prompt/html/aula1-pratica-html.html`
 
 ## Fluxo obrigatório
 
@@ -64,6 +75,7 @@ Regras para a conversão:
 - manter CSS e JavaScript embutidos no próprio arquivo;
 - preservar navegação lateral, menu mobile, tema e responsividade;
 - atualizar links entre aulas e práticas quando necessário;
+- atualizar `index.html` com o link público para cada novo HTML final;
 - bloquear ou marcar aulas futuras quando ainda não tiverem conteúdo completo;
 - garantir que prompts, tabelas e blocos de código não estourem o layout;
 - validar em desktop e celular.

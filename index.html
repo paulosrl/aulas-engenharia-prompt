@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulas Engenharia Prompt</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f6f8fb;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    .label {
+      color: #1e4fbd;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      color: #0f1e3a;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.08;
+    }
+
+    p {
+      max-width: 720px;
+      margin: 0;
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    .aulas {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .aula {
+      display: block;
+      padding: 22px;
+      border: 1px solid #dbe3ef;
+      border-radius: 8px;
+      background: #ffffff;
+      color: inherit;
+      text-decoration: none;
+      box-shadow: 0 8px 28px rgba(15, 30, 58, 0.07);
+      transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .aula:hover,
+    .aula:focus-visible {
+      border-color: #1e4fbd;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(15, 30, 58, 0.11);
+      outline: none;
+    }
+
+    .aula strong {
+      display: block;
+      color: #0f1e3a;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .aula span {
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #dbe3ef;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="label">Datavirtus · Prof. Paulo Lima</div>
+      <h1>Aulas Engenharia Prompt</h1>
+      <p>Acesso público às aulas em HTML. Cada aula é gerada a partir do conteúdo completo em Markdown e publicada como arquivo offline.</p>
+    </header>
+
+    <section class="aulas" aria-label="Aulas disponíveis">
+      <a class="aula" href="html/aula1.html">
+        <strong>Aula 1</strong>
+        <span>Engenharia de Prompt para Análises Investigativas</span>
+      </a>
+      <a class="aula" href="html/aula1-pratica-html.html">
+        <strong>Prática da Aula 1</strong>
+        <span>Exercícios e prompts práticos da primeira aula</span>
+      </a>
+    </section>
+
+    <footer>
+      Projeto publicado via GitHub Pages em paulosrl.github.io/aulas-engenharia-prompt.
+    </footer>
+  </main>
+</body>
+</html>
